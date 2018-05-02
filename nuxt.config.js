@@ -15,6 +15,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'}
     ]
   },
+  modules: [
+    '@nuxtjs/bulma'
+  ],
   /*
   ** Customize the progress bar color
   */
