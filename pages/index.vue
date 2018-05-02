@@ -1,33 +1,27 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
       <h1 class="title">
-        nuxtjs-starter
+        The Viji
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        Making visible what is invisible for the eye
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+        <a href="https://twitter.com/thisistheviji" target="blank"><i class="ion-social-twitter"></i></a>
+        <a href="https://www.instagram.com/thisistheviji" taget="blank"><i class="ion-social-instagram"></i></a>
+        <a href="https://www.facebook.com/theviji/" target="blank"><i class="ion-social-facebook"></i></a>
+      </div>
+      <div class="footer">
+        Copyright 2016-2018 - The Viji
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
   components: {
-    AppLogo
   }
 }
 </script>
@@ -60,5 +54,15 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.links a i {
+	font-size: 40px;
+  padding: 20px;
+  color:#526488;
+}
+.footer{
+  font-size: x-small;
+  padding-top: 40px;
 }
 </style>
