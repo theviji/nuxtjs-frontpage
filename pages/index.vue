@@ -69,50 +69,50 @@
             Welcome to The Viji
           </h1>
           <h2 class="subtitle">
-            Currently the website is under heavy maintenance.<br/>Leave your email & get updates when our website is ready.
+            Currently the website is under heavy maintenance.
           </h2>
         </div>
       </div>
     </section>
 
     <section class="container">
-      <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child notification ">
-              <div class="card-image has-text-centered">
-                <i class="ion-connection-bars"></i>
-              </div>
-              <p class="title has-text-centered">Visualization</p>
-              <p>Let us help you visualize your data by giving you new insights in techniques and tools of the Big Data world.</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <div class="card-image has-text-centered">
-                <i class="ion-ios-monitor-outline"></i>
-              </div>
-              <h4>Online learning</h4>
-              <p>By providing appealing and innovative ways of exposing information we aim to make learning fun again.</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification">
-              <div class="card-image has-text-centered">
-                <i class="ion-ios-book-outline"></i>
-              </div>
-                <p class="title">Tutorials</p>
-                <p>We are here to teach people, young to old, starters and experienced people moden ways of engaging with the web.</p>
-            </article>
-          </div>
-        </div>
-    </section>
-
-
-    <section class="container">
       <div class="intro is-8 is-offset-2">
         <h2 class="title">Making visible what is invisible for the eye!</h2><br>
       </div>
     </section>  
+
+    <section class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent inverted-tile">
+          <article class="tile is-child">
+            <p class="title has-text-centered">Visualization</p>
+            <p class="has-text-centered">Let us help you visualize your data by giving you new insights in techniques and tools of the Big Data world.</p>
+            <div class="has-text-centered">
+              <i class="ion-connection-bars"></i>
+            </div>            
+          </article>
+        </div>
+        <div class="tile is-parent inverted-tile">
+          <article class="tile is-child is-0">
+            <p class="title has-text-centered">Online learning</p>
+            <p class="has-text-centered">By providing appealing and innovative ways of exposing information we aim to make learning fun again.</p>
+            <div class="has-text-centered">
+              <i class="ion-ios-monitor-outline"></i>
+            </div>
+            
+          </article>
+        </div>
+        <div class="tile is-parent inverted-tile">
+          <article class="tile is-child">
+            <p class="title has-text-centered">Tutorials</p>
+            <p class="has-text-centered">We are here to teach people, young to old, starters and experienced people moden ways of engaging with the web.</p>
+            <div class="has-text-centered">
+              <i class="ion-ios-book-outline"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section class="container">
       <div class="articles columns">
@@ -211,10 +211,9 @@
         <div class="tile is-ancestor">
            <div class="tile is-parent">
             <article class="tile is-child notification is-white">
-              <p class="title">Very pleasant experience!</p>
-              <p class="subtitle">F. Crawl</p>
+              <p class="title">We create..</p>
               <div class="content">
-                <p>While until recently we used to work with Excel sheets and PowerPoints, the Viji provided us with new and faster ways to give insights in our financial situation.</p>
+                <p>Graphs, visuals, charts, you name it. We put data in new formats, shapes and colors!</p>
               </div>
             </article>
           </div>
@@ -328,7 +327,6 @@ export default {
 
 <style>
 html,body {
-  background: #EFF3F4;
   color: rgb(10, 86, 130);
   font-family: 'Lato', 'Open Sans', serif;
 }
@@ -337,7 +335,8 @@ h2.title, .icon i:hover{
 }
 
 .hero-body{
-    background: url(https://www.walldevil.com/wallpapers/a80/lake-ontario-toronto-ontario-canada.jpg) no-repeat center center;
+  background: url(https://www.walldevil.com/wallpapers/a80/lake-ontario-toronto-ontario-canada.jpg) no-repeat center center;
+  margin-bottom: 50px;
 }
 .hero-body .container {
   max-width: 700px;
@@ -355,7 +354,10 @@ h2.title, .icon i:hover{
 nav.navbar{
   border-bottom: white 1px solid;
 }
-.hero.is-info, .hero.is-info .navbar-menu, .navbar-brand{
+.hero.is-info{
+  background: #fff;
+}
+.hero.is-info .navbar-menu, .navbar-brand{
   background-color: rgb(10, 86, 130);
 }
 .hero.is-info a.navbar-item:hover{
@@ -434,7 +436,7 @@ nav.navbar{
     width: 60px;
     height: 60px;
     margin-left: -30px;
-    border: 3px solid #ccc;
+    border: 2px solid rgb(10, 86, 130);
     border-radius: 50%;
 }
 .media-center {
@@ -463,5 +465,40 @@ div.column.is-8:first-child {
 .article-body {
   line-height: 1.4;
   margin: 0 6rem;
+}
+.inverted-tile, .inverted-tile i, .inverted-tile p.title{
+  color: #fff;
+}
+.inverted-tile p.title{
+  margin-top: 70px;
+}
+.inverted-tile{
+  background: rgb(10, 86, 130);
+  margin: 50px;
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2000px;
+  height: 350px;
+  border: 2px solid rgb(10, 86, 130);
+  position: relative;
+}
+.inverted-tile:before {
+  background: none;
+  border: 2px solid #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 2000px;
+  pointer-events: none;
+}
+.inverted-tile i{
+  background: rgb(10, 86, 130);
+  font-size: 70px;
 }
 </style>
