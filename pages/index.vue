@@ -1,49 +1,63 @@
 <template>
   <section>
-    <section class="hero is-info is-medium is-bold">
+    <section class="hero is-info is-medium">
       <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="../">
-                TheViji.com
-              </a>
-              <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+        <nav class="navbar is-fixed-top">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              TheViji.com
+            </a>
+            <!--
+        Using the v-on: directive to listen for the click event and toggle the data property showNav. Also, using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+            <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div id="navbarMenu" class="navbar-menu">
-              <div class="navbar-end">
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="https://twitter.com/thisistheviji">
-                    <span class="icon">
-                      <i class="ion-social-twitter"></i>
-                    </span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="https://www.instagram.com/thisistheviji">
-                    <span class="icon">
-                      <i class="ion-social-instagram"></i>
-                    </span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="https://www.facebook.com/theviji/">
-                    <span class="icon">
-                      <i class="ion-social-facebook"></i>
-                    </span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="https://github.com/theviji">
-                    <span class="icon">
-                      <i class="ion-social-github"></i>
-                    </span>
-                  </a>
-                </span>
+          </div>
+          <!--
+        Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+          <div class="navbar-menu" :class="{ 'is-active': showNav }">
+            <div class="navbar-start">
+              <a class="navbar-item" href="/">
+                Home
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped is-grouped-centered">
+                  <p class="control">
+                    <a class="button is-white is-outlined" href="https://www.instagram.com/thisistheviji">
+                      <span class="icon">
+                        <i class="ion-social-instagram"></i>
+                      </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-white is-outlined" href="https://twitter.com/thisistheviji">
+                      <span class="icon">
+                        <i class="ion-social-twitter"></i>
+                      </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-white is-outlined" href="https://www.facebook.com/theviji/">
+                      <span class="icon">
+                        <i class="ion-social-facebook"></i>
+                      </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-white is-outlined" href="https://github.com/theviji">
+                      <span class="icon">
+                        <i class="ion-social-github"></i>
+                      </span>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -128,6 +142,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      showNav: false
+    }
+  },
   components: {
   }
 }
@@ -136,18 +155,40 @@ export default {
 <style>
 html,body {
   background: #EFF3F4;
+  color: rgb(10, 86, 130);
   font-family: 'Lato', 'Open Sans', serif;
+}
+h2.title{
+  color: rgb(10, 86, 130);
+}
+.hero-body{
+    background: url(https://www.walldevil.com/wallpapers/a80/lake-ontario-toronto-ontario-canada.jpg) no-repeat center center;
 }
 .hero-body .container {
   max-width: 700px;
 }
 .hero-body .title {
   color: hsl(192,17%,99%) !important;
+  text-shadow: -2px 0 4px rgb(10, 86, 130), 0 2px 4px rgb(10, 86, 130), 2px 0 4px rgb(10, 86, 130), 0 -2px 4px rgb(10, 86, 130);
 }
 .hero-body .subtitle {
   color: hsl(192,17%,99%) !important;
   padding-top: 2rem;
   line-height: 1.5;
+  text-shadow: -2px 0 4px rgb(10, 86, 130), 0 2px 4px rgb(10, 86, 130), 2px 0 4px rgb(10, 86, 130), 0 -2px 4px rgb(10, 86, 130);
+}
+nav.navbar{
+  border-bottom: white 1px solid;
+}
+.hero.is-info, .hero.is-info .navbar-menu, .navbar-brand{
+  background-color: rgb(10, 86, 130);
+}
+.hero.is-info a.navbar-item:hover{
+  background: #fff;
+  color: rgb(10, 86, 130);
+}
+.hero.is-info a:not(.button):not(.dropdown-item):not(.tag):hover{
+  color: rgb(10, 86, 130);
 }
 .features {
   padding: 5rem 0;
@@ -161,7 +202,7 @@ html,body {
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: rgb(10, 86, 130);
 }
 .card-content .content {
   font-size: 14px;
@@ -188,17 +229,17 @@ html,body {
   flex-direction: column;
 }
 .is-shady {
-animation: flyintoright .4s backwards;
-background: #fff;
-box-shadow: rgba(0, 0, 0, .1) 0 1px 0;
-border-radius: 4px;
-display: inline-block;
-margin: 10px;
-position: relative;
-transition: all .2s ease-in-out;
+  animation: flyintoright .4s backwards;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 0;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  transition: all .2s ease-in-out;
 }
 .is-shady:hover {
-box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
 }
 
 .button{
