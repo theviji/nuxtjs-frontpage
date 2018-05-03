@@ -5,7 +5,7 @@
         <nav class="navbar is-fixed-top">
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
-              TheViji.com
+              The Viji
             </a>
             <!--
         Using the v-on: directive to listen for the click event and toggle the data property showNav. Also, using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
@@ -76,52 +76,226 @@
     </section>
 
     <section class="container">
-      <div class="columns features">
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="ion-connection-bars"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Visualization</h4>
-                <p>Let us help you visualize your data by given you new insights in techniques and tools of the Big Data world.</p>
+      <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child notification ">
+              <div class="card-image has-text-centered">
+                <i class="ion-connection-bars"></i>
               </div>
-            </div>
+              <p class="title has-text-centered">Visualization</p>
+              <p>Let us help you visualize your data by giving you new insights in techniques and tools of the Big Data world.</p>
+            </article>
           </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="ion-ios-monitor-outline"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Online learning</h4>
-                <p>By providing appealing and innovative ways of exposing information we aim to make learning fun again.</p>
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <div class="card-image has-text-centered">
+                <i class="ion-ios-monitor-outline"></i>
               </div>
-            </div>
+              <h4>Online learning</h4>
+              <p>By providing appealing and innovative ways of exposing information we aim to make learning fun again.</p>
+            </article>
           </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="ion-ios-book-outline"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Tutorials</h4>
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <div class="card-image has-text-centered">
+                <i class="ion-ios-book-outline"></i>
+              </div>
+                <p class="title">Tutorials</p>
                 <p>We are here to teach people, young to old, starters and experienced people moden ways of engaging with the web.</p>
+            </article>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+      <div class="intro is-8 is-offset-2">
+        <h2 class="title">Making visible what is invisible for the eye!</h2><br>
+      </div>
+    </section>  
+
+    <section class="container">
+      <div class="articles columns">
+        <div class="column is-3">          
+          <div class="card article">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-center">
+                  <img src="http://www.radfaces.com/images/avatars/big-pete-wrigley.jpg" class="author-image" alt="Placeholder image">
+                </div>
+                <div class="media-content has-text-centered">
+                  <p class="title article-title">Finally an easy way to learn</p>
+                  <p class="subtitle is-6 article-subtitle">
+                    <a href="#">Jan Vanderschoot</a> on February 24, 2018
+                  </p>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p>I have never really been into culture and history, but TheViji makes it easy to quickly browse to several topics when I have a few minutes of spare time.
+                </p>
               </div>
             </div>
           </div>
+        </div>
+        <div class="column is-3">
+          <div class="card article">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-center">
+                  <img src="http://www.radfaces.com/images/avatars/clarissa-marie-darling.jpg" class="author-image" alt="Placeholder image"> 
+                  </div>
+                  <div class="media-content has-text-centered">
+                    <p class="title article-title">Superb :)</p>
+                    <p class="subtitle is-6 article-subtitle">
+                      <strong>Tina Nipote</strong> on October 7, 2017
+                    </p>
+                  </div>
+                </div>
+                <div class="content article-body">
+                  <p>
+                    As a girl just starting with school, I find it fun to play on the Vijis learning platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card article">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-center">
+                    <img src="http://www.radfaces.com/images/avatars/angela-chase.jpg" class="author-image" alt="Placeholder image">
+                  </div>
+                  <div class="media-content has-text-centered">
+                    <p class="title article-title">Very pleasant experience!</p>
+                    <p class="subtitle is-6 article-subtitle">
+                      <strong>F. Crawl</strong> on November 12, 2017
+                    </p>
+                  </div>
+                </div>
+                <div class="content article-body">
+                  <p>
+                    While until recently we used to work with Excel sheets and PowerPoints, the Viji provided us with new and faster ways to give insights in our financial situation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card article">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-center">
+                    <img src="http://www.radfaces.com/images/avatars/scrappy-doo.jpg" class="author-image" alt="Placeholder image">
+                  </div>
+                  <div class="media-content has-text-centered">
+                    <p class="title article-title">Complex but interesting..</p>
+                    <p class="subtitle is-6 article-subtitle">
+                      <strong>S. Doo</strong> on April 30, 2018
+                    </p>
+                  </div>
+                </div>
+                <div class="content article-body">
+                  <p>
+                    While until recently we used to work with Excel sheets and PowerPoints, the Viji provided us with new and faster ways to give insights in our financial situation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="sandbox">
+        <div class="tile is-ancestor">
+           <div class="tile is-parent">
+            <article class="tile is-child notification is-white">
+              <p class="title">Very pleasant experience!</p>
+              <p class="subtitle">F. Crawl</p>
+              <div class="content">
+                <p>While until recently we used to work with Excel sheets and PowerPoints, the Viji provided us with new and faster ways to give insights in our financial situation.</p>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-white">
+              <figure class="image is-6by3">
+                <img src="/directed_graph_10.png">
+              </figure>
+            </article>
+          </div>
+        </div>
+      </div>    
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-white">
+                <p class="title">Vertical tiles</p>
+                <p class="subtitle">Top box</p>
+              </article>
+              <article class="tile is-child notification is-white">
+                <p class="title">Vertical tiles</p>
+                <p class="subtitle">Bottom box</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-white">
+                <p class="title">Middle box</p>
+                <p class="subtitle">With an image</p>
+                <figure class="image is-6by3">
+                  <img src="/worldmap_final.png">
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent is-shady">
+            <article class="tile is-child notification is-white">
+              <p class="title">Wide column</p>
+              <p class="subtitle">Aligned with the right column</p>
+              <figure class="image is-6by3">
+                <img src="/areachart_countries.png">
+              </figure>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent is-shady">
+          <article class="tile is-child notification is-white">
+            <div class="content">
+              <p class="title">Tall column</p>
+              <p class="subtitle">With even more content</p>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+                <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
 
-      <div class="intro column is-8 is-offset-2">
-        <h2 class="title">Making visible what is invisible for the eye!</h2><br>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-white">
+            <p class="title">Side column</p>
+            <p class="subtitle">With some content</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent is-8 is-shady">
+          <article class="tile is-child notification is-white">
+            <p class="title">Main column</p>
+            <p class="subtitle">With some content</p>
+            <figure class="image is-6by3">
+              <img src="/stacked_bar_creationyears.png">
+            </figure>
+          </article>
+        </div>
       </div>
-    </section>      
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -158,9 +332,10 @@ html,body {
   color: rgb(10, 86, 130);
   font-family: 'Lato', 'Open Sans', serif;
 }
-h2.title{
+h2.title, .icon i:hover{
   color: rgb(10, 86, 130);
 }
+
 .hero-body{
     background: url(https://www.walldevil.com/wallpapers/a80/lake-ontario-toronto-ontario-canada.jpg) no-repeat center center;
 }
@@ -244,5 +419,49 @@ nav.navbar{
 
 .button{
   border-radius: 45px;
+}
+.articles {
+  margin: 5rem 0;
+}
+.articles .content p {
+    line-height: 1.9;
+    margin: 15px 0;
+}
+.author-image {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+}
+.media-center {
+  display: block;
+  margin-bottom: 1rem;
+}
+.media-content {
+  margin-top: 3rem;
+}
+.article, .promo-block {
+  margin-top: 6rem;
+}
+div.column.is-8:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+.article-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+.article-subtitle {
+  color: #909AA0;
+  margin-bottom: 3rem;
+}
+.article-body {
+  line-height: 1.4;
+  margin: 0 6rem;
 }
 </style>
